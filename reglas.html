@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reglas del Juego 🎲</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("IMG_5986.jpg"); /* luego pondremos la foto */
+            background-size: cover;
+            background-position: 50% 80%;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: left;
+            margin-top: -80px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        ol {
+            font-size: 1.2em;
+            line-height: 2;
+            padding-left: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto 0 auto;
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>Reglas del Juego 🎉</h1>
+        <ol>
+            <li>Vas a empezar la lucha por descubrir tus regalos</li>
+            <li>No podrás pasar a la siguiente página sin haber descubierto tu regalo previamente</li>
+            <li>Tendrás que usar tanto la lógica como nuestros recuerdos</li>
+            <li>¡QUE EMPIECE EL JUEGO!</li>
+        </ol>
+
+        <button onclick="window.location.href='regalo1.html'">
+            Empezar el primer regalo 🎁
+        </button>
+    </div>
+</body>
+</html>

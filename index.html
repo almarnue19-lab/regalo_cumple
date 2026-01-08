@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Cumpleaños ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("IMG_5986.jpg"); /* luego pondremos la foto */
+            background-size: cover;
+            background-position: 50% 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            max-width: 500px;
+            margin-top: -520px; /* SUBE LA CAJA */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <h1>Feliz cumpleaños, cariño ❤️</h1>
+        <p>
+            Este es solo el comienzo de tu regalo.<br>
+            ¿Lista para jugar? 💕
+        </p>
+
+        <button onclick="window.location.href='reglas.html'">
+            Empezar 🎁
+        </button>
+        
+    </div>
+
+</body>
+</html>
