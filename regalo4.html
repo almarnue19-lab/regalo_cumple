@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Regalo 4 🎁</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("IMG_5986.jpg");
+            background-size: cover;
+            background-position: 50% 90%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.25em;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+            .blur {
+            background-color: rgba(255, 255, 255, 0.15); /* ligeramente más visible */
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            filter: blur(8px);
+            transition: filter 0.5s, background-color 0.3s;
+            margin-top: 30px;
+            text-align: center; /* centra el texto */
+            color: white; /* asegura visibilidad */
+            }
+
+
+        .blur.unblur {
+            filter: blur(0);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #ffa502;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff7f50;
+        }
+
+        .btn-secondary {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1c86ee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>Regalo 4 🎁</h1>
+
+        <p>
+            Para recibir tu próximo regalo,  
+            lo único que tienes que hacer es ponerte ropa deportiva  
+            y estar preparada para algo guay 😏
+        </p>
+
+        <p style="text-align:center; font-weight:bold; text-transform:uppercase; margin-top:20px; margin-bottom:20px;">
+            UNA VEZ EN EL SITIO ADECUADO, Y ÚNICAMENTE CUANDO SE TE INDIQUE, PODRÁS CLICKAR PARA DESBLOQUEAR LA PISTA
+        </p>
+        
+        <div id="pista" class="blur" onclick="desbloquearPista()">
+            <span style="color:white; display:block;">Haz clic aquí para desbloquear la pista</span>
+        </div>
+        
+
+       
+        
+        <div class="buttons" id="botonSprinter" style="display:none;">
+            <a class="btn-secondary" href="https://www.sprintersports.com/hoka-rincon-4-0400335" target="_blank">
+                Hasta aquí hemos llegado, o no?
+            </a>
+        </div>
+        
+    </div>
+
+    <script>
+        function desbloquearPista() {
+            const pista = document.getElementById("pista");
+            pista.classList.add("unblur");
+            pista.innerText = "El reto es muy sencillo: enciende tu reloj en modo caminar y completa 2 km. Una vez completado, recibirás tu regalo 🐾🏖️";
+
+            // Mostrar botón para Sprinter después de leer la pista (opcional)
+            const botonSprinter = document.getElementById("botonSprinter");
+            botonSprinter.style.display = "block";
+        }
+    </script>
+</body>
+</html>
